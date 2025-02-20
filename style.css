@@ -1,3 +1,128 @@
 body {
-    text-align: center;
+  text-align: center;
+  margin: 0;
+}
+
+a {
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
+  height: 50px;
+  padding: 8px;
+  margin-bottom: 60px;
+  justify-content: space-between;
+  text-align: end;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#profile-img {
+  border-radius: 50%;
+  width: 50px;
+}
+
+#main-content-area {
+  text-align: center;
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
+  width: 80%;
+  height: 500px;
+  margin: auto;
+  margin-bottom: 5%;
+  padding: 6%;
+}
+
+.main-pfp {
+    border-radius: 40%;
+    width: 300px;
+    display: flex;
+    margin-left: 60px;
+}
+
+#about-me-area {
+  text-align: center;
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
+  width: 80%;
+  height: 500px;
+  margin: auto;
+  margin-bottom: 5%;
+  padding: 6%;
+}
+
+#project-area {
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
+  width: 80%;
+  height: 500px;
+  margin: auto;
+  margin-bottom: 5%;
+  padding-top: 90px;
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  text-align: center;
+}
+
+#project-area-top-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
+  width: 100%;
+  height: 80px;
+  text-align: start;
+  font-size: larger;
+  margin-bottom: 10px;
+}
+
+#project-area img {
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 35%;
+  width: 150px;
+}
+
+#project-area .div-1 {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: auto;
+}
+
+#contact-area {
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
+  width: 80%;
+  height: 500px;
+  margin: auto;
+  margin-bottom: 5%;
+}
+
+#message-to-send {
+  height: 200px;
+  width: 300px;
+  max-width: 500px;
+  max-height: 300px;
+  min-width: 194px;
+  min-height: 188px;
+}
+
+#contact-area input {
+  margin-bottom: 15px;
 }
