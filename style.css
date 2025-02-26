@@ -15,7 +15,7 @@ body {
   position: fixed;
 }
 
-a {
+nav a {
   padding: 20px;
   color: white;
   text-decoration: none;
@@ -23,7 +23,7 @@ a {
   font-weight: bolder;
 }
 
-a:hover {
+nav a:hover {
   text-decoration: underline;
   color: blue;
 }
@@ -42,6 +42,7 @@ nav {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  color: white;
 }
 
 nav div {
@@ -158,7 +159,7 @@ nav div {
   background-color: white;
 }
 
-#message-to-send {
+#emailBody {
   height: 200px;
   width: 300px;
   max-width: 500px;
@@ -167,8 +168,9 @@ nav div {
   min-height: 188px;
 }
 
-#contact-area input {
-  margin-bottom: 15px;
+#composeEmail {
+  color: black;
+  font-size: larger;
 }
 
 @media (max-width: 480px) {
@@ -240,4 +242,23 @@ nav div {
 
   .show-content {
     opacity: 1;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: rgb(71, 71, 163);
+  }
+
+  #contact-area button {
+    margin-top: 15px;
+    border-radius: 9%;
+    height: 50px;
+    width: 100px;
+    font-weight: bolder;
+  }
+
+  #contact-area button:hover {
+    background-color: rgb(219, 219, 219);
+    box-shadow: -5px 5px gray;
+    cursor: pointer;
   }

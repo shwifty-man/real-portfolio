@@ -51,6 +51,22 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.getElementById("composeEmail").addEventListener("click", function (event) 
+{   event.preventDefault(); // Prevent the default link behavior
+
+    let message = document.getElementById("emailBody").value;
+    let encodedMessage = encodeURIComponent(message); // Encode text for URL
+
+    let email = "codertimw@gmail.com"; // Replace with your email
+    let subject = "Subject Here"; // Optional: Change the subject
+
+    let gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(
+      subject
+    )}&body=${encodedMessage}`;
+
+    window.open(gmailUrl, "_blank"); // Open in new tab
+  });
+
 window.addEventListener("scroll", stickNav);
 window.addEventListener("scroll", imgAppear);
 window.addEventListener("scroll", textAppear);
