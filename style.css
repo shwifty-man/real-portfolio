@@ -3,10 +3,24 @@ body {
   margin: 0;
 }
 
+#myVideo {
+  z-index: -1;
+  overflow: hidden;
+  min-width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  object-fit: cover;
+  position: fixed;
+}
+
 a {
   padding: 20px;
-  color: black;
+  color: white;
   text-decoration: none;
+  font-size: 20px;
+  font-weight: bolder;
 }
 
 a:hover {
@@ -24,6 +38,10 @@ nav {
   margin-bottom: 60px;
   justify-content: space-between;
   text-align: end;
+  background-image: url(IMG/desktop-wallpaper-cool-coding-cool-code-1653187583.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 nav div {
@@ -50,6 +68,7 @@ nav div {
   margin-bottom: 5%;
   padding: 6%;
   overflow:auto;
+  background-color: white;
 }
 
 .main-pfp {
@@ -74,11 +93,13 @@ nav div {
   margin: auto;
   margin-bottom: 5%;
   padding: 6%;
-  overflow: auto;
+  overflow: hidden;
+  background-color: white;
 }
 
 #about-me-area p {
-  margin: 0;
+  margin: 35px;
+  font-size: medium;
 }
 
 #project-area {
@@ -94,6 +115,7 @@ nav div {
   display: flex;
   position: relative;
   text-align: center;
+  background-color: white;
 }
 
 #project-area-top-bar {
@@ -133,6 +155,7 @@ nav div {
   height: 500px;
   margin: auto;
   margin-bottom: 5%;
+  background-color: white;
 }
 
 #message-to-send {
@@ -172,3 +195,49 @@ nav div {
 .p1 {
   margin-top: 2px;
 }
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  pointer-events: none;
+}
+.intro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.intro h2 {
+  text-align: center;
+  color: white;
+  z-index: 2000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+  .intro video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video fills the whole screen */
+  position: absolute;
+  top: 0;
+  left: 0;
+  }
+
+  .content {
+    opacity: 0;
+    transition: opacity 1.5s ease-in;
+  }
+
+  .show-content {
+    opacity: 1;
+  }
