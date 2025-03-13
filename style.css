@@ -63,7 +63,7 @@ nav div {
   border-width: 3px;
   border-style: solid;
   border-color: black;
-  width: 80%;
+  width: 70%;
   height: 500px;
   margin: auto;
   margin-bottom: 5%;
@@ -89,7 +89,7 @@ nav div {
   border-width: 3px;
   border-style: solid;
   border-color: black;
-  width: 80%;
+  width: 70%;
   height: 500px;
   margin: auto;
   margin-bottom: 5%;
@@ -180,7 +180,6 @@ nav div {
 }
 @media (max-height: 600px) {
   body {font-size: 14px;
-    background-color: red;
   }
 }
 
